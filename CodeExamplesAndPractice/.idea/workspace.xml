@@ -2,76 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf9bd2cc-c74d-4a63-95ac-4d80e7e51112" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodeExamplesAndPractice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week1/Practice/BitonicSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week1/Practice/FindLargestUF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week1/Practice/PracticeQuickFind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week1/Practice/PracticeQuickUnion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week1/Practice/PracticeWQUwPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week1/Practice/SocialConnectivityUF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week1/Practice/SuccessorUF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week1/UnionFind/QuickFindUF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week1/UnionFind/QuickUnionUF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week1/UnionFind/WeightedQuickUnionPathCompressionUF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week1/UnionFind/WeightedQuickUnionUF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Generics/GenericLinkedStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Generics/GenericResizingArrayStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/IteratorAndBag/GenericBag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/IteratorAndBag/GenericLinkedStackWithIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/IteratorAndBag/GenericResizingArrayStackWithIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Practice/QueueWithTwoStacks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Queues/LinkedQueueOfStrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Queues/ResizingArrayQueueOfStrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/ShellSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/Sort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Stacks/FixedCapacityStackOfStrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Stacks/LinkedStackOfStrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Stacks/ResizingArrayStackOfStrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Part 1/Week2/Queues/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/.idea/libraries/Maven__edu_princeton_cs_algs4_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/Percolation.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/src/Percolation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/src/PercolationStats.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/target/classes/Percolation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/target/classes/PercolationStats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Old_Assignment_Percolation/target/percolation-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Percolation/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Percolation/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Percolation/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Percolation/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Percolation/Percolation.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/Percolation/src/Percolation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/UnionFind.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/src/Practice/FindLargestUF.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/src/Practice/PracticeQuickFind.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/src/Practice/PracticeQuickUnion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/src/Practice/PracticeWQUwPC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/src/Practice/SocialConnectivityUF.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/src/Practice/SuccessorUF.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/src/QuickFindUF.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/src/QuickUnionUF.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/src/WeightedQuickUnionPathCompressionUF.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part 1/Week1/UnionFind/src/WeightedQuickUnionUF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Part 1/Week2/Queues/.idea/workspace.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
