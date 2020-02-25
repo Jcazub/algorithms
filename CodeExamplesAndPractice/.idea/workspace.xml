@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf9bd2cc-c74d-4a63-95ac-4d80e7e51112" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assignments/Queues/src/Deque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/Queues/src/Permutation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/Queues/src/RandomizedQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/BottomUpMergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/MergeSortImproved.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/MergeSortImprovedWithArraySwap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments/Percolation/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments/Percolation/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments/Percolation/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments/Percolation/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments/Percolation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments/Percolation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignments/Percolation/Percolation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments/Percolation/Percolation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/Collinear.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/src/BruteCollinearPoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/src/FastCollinearPoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/src/LineSegment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/src/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/Quicksort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/QuicksortImproved.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1/Week2/Sorts/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1/Week2/Sorts/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/Sort.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +94,7 @@
       <workItem from="1565548833154" duration="97000" />
       <workItem from="1568579920444" duration="579000" />
       <workItem from="1569375613611" duration="1810000" />
-      <workItem from="1581968584922" duration="5357000" />
+      <workItem from="1581968584922" duration="11050000" />
     </task>
     <servers />
   </component>

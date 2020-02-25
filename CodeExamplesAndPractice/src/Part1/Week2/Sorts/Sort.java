@@ -1,6 +1,6 @@
 package Part1.Week2.Sorts;
 
-public class Sort {
+public abstract class Sort {
 
     protected static boolean less(Comparable v, Comparable w)
     {
