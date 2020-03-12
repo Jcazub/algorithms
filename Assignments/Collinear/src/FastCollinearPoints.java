@@ -1,24 +1,18 @@
-import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.StdDraw;
-import edu.princeton.cs.algs4.StdOut;
-
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class FastCollinearPoints {
 
     private ArrayList<LineSegment> lineSegments;
-    private Point[] auxPoints;
-    private List<Point> startingPoints;
+    private Point[] pointsSortedOrder;
+    private Point[] pointsNaturalOrder;
 
     public FastCollinearPoints(Point[] points)
     {
-        verifyAllPoints(points);
+        verifyPointsNotNull(points);
         initializeVariables(points);
-        copyToAuxArray(points);
-        findLineSegments(points);
+        verifyNoDuplicates();
+        findCollinearLineSegments();
     }
 
     public int numberOfSegments()
@@ -31,102 +25,111 @@ public class FastCollinearPoints {
         return lineSegments.toArray(new LineSegment[0]);
     }
 
-
-
-    private void findLineSegments(Point[] points)
+    private void findCollinearLineSegments()
     {
-        for (int i = 0; i < points.length; i++)
+        for (int i = 0; i < pointsNaturalOrder.length; i++)
         {
-            Arrays.sort(auxPoints, points[i].slopeOrder());
-            Point[] collinearPoints = findPointsWithSameSlope();
-            Arrays.sort(collinearPoints);
-            if (!detectLineSegmentDuplicates(collinearPoints[0]))
-            {
-                LineSegment ls = new LineSegment(collinearPoints[0], collinearPoints[collinearPoints.length - 1]);
-                lineSegments.add(ls);
-            }
+            pointsSortedOrder = pointsNaturalOrder.clone();
+            Arrays.sort(pointsSortedOrder, pointsNaturalOrder[i].slopeOrder());
+            findPointsWithSameSlope();
         }
     }
 
-    private Point[] findPointsWithSameSlope()
+    private void findPointsWithSameSlope()
     {
-        Point mainPoint = auxPoints[0];
-
-        ArrayList<Point> samePoints = new ArrayList<>();
-        samePoints.add(mainPoint);
-        for (int i = 1; i < auxPoints.length; i++)
+        int sameSlopeCount = 1;
+        int pointsLength = pointsNaturalOrder.length;
+        int i = 0;
+        while (i < pointsLength - 1)
         {
-            int j = i + 1;
-            double slope = mainPoint.slopeTo(auxPoints[i]);
-
-            while (j < auxPoints.length)
-            {
-                if (Double.compare(slope, mainPoint.slopeTo(auxPoints[j])) != 0)
-                {
-                    break;
+            if (onSameLine(i)) {
+                sameSlopeCount++;
+                int k = i + 1;
+                while (k < pointsSortedOrder.length && stillSameLine(i, k)) {
+                    sameSlopeCount++;
+                    k++;
                 }
-                j++;
-            }
+                if (sameSlopeCount > 3) {
+                    int endPoint = k - 1;
+                    if (verifyLineOrder(i, endPoint)) {
+                        LineSegment ls = new LineSegment(pointsSortedOrder[0], pointsSortedOrder[endPoint]);
+                        lineSegments.add(ls);
 
-            if (j - i > 2)
-            {
-                for (int k = i; k < j; k++)
-                {
-                    samePoints.add(auxPoints[k]);
+                        sameSlopeCount = 1;
+                        i = k - 1;
+                    } else {
+                        sameSlopeCount = 1;
+                        i = k - 1;
+                    }
+                } else {
+                    sameSlopeCount = 1;
+                    i = k - 1;
                 }
             }
+            i++;
         }
-        return samePoints.size() > 3 ? samePoints.toArray(new Point[0]) : new Point[0];
     }
 
+    private boolean verifyLineOrder(int nextPoint, int endPoint) {
+        boolean lessThanNextPoint = pointsSortedOrder[0].compareTo(pointsSortedOrder[nextPoint]) < 0;
+        boolean lessThanLastPoint = pointsSortedOrder[0].compareTo(pointsSortedOrder[endPoint]) < 0;
+        return lessThanNextPoint && lessThanLastPoint;
+    }
+
+    private boolean onSameLine(int i)
+    {
+        double firstSlope = pointsSortedOrder[0].slopeTo(pointsSortedOrder[i]);
+        double secondSlope = pointsSortedOrder[0].slopeTo(pointsSortedOrder[i + 1]);
+        return Double.compare(firstSlope, secondSlope) == 0;
+    }
+
+    private boolean stillSameLine(int i, int k)
+    {
+        double firstSlope = pointsSortedOrder[0].slopeTo(pointsSortedOrder[i]);
+        double secondSlope = pointsSortedOrder[i].slopeTo(pointsSortedOrder[k]);
+        return Double.compare(firstSlope, secondSlope) == 0;
+    }
+
+    /*
+    MEMBER INTITALIZATIONS
+     */
     private void initializeVariables(Point[] points)
     {
         this.lineSegments = new ArrayList<>();
-        this.auxPoints = new Point[points.length];
-        this.startingPoints = new ArrayList<>();
+
+        pointsNaturalOrder = Arrays.copyOf(points, points.length);
+        pointsSortedOrder = Arrays.copyOf(points, points.length);
+
+        Arrays.sort(pointsNaturalOrder);
     }
 
-    private void copyToAuxArray(Point[] points)
+    /*
+    * INPUT VERIFICATION
+    * */
+    private void verifyPointsNotNull(Point[] points)
+    {
+        if (points == null) throw new IllegalArgumentException();
+        verifyEachPointNotNull(points);
+    }
+
+    private void verifyEachPointNotNull(Point[] points)
     {
         for (int i = 0; i < points.length; i++)
         {
-            auxPoints[i] = points[i];
+
+            if (points[i] == null) throw new IllegalArgumentException();
         }
     }
 
-    // ensures there are no null or duplicate points
-    private void verifyAllPoints(Point[] points)
-    {
-        if (points == null) throw new IllegalArgumentException();
-        verifyEachPoint(points);
-
-    }
-
-    private void verifyEachPoint(Point[] points)
-    {
-        for (int i = 0; i < points.length; i++)
-        {
-            if (points[i] == null) throw new IllegalArgumentException();
-
-            for (int k = i + 1; k < points.length; k++)
-            {
-                if (points[i].compareTo(points[k]) == 0) throw new IllegalArgumentException();
+    private void verifyNoDuplicates() {
+        for (int i = 0; i < pointsNaturalOrder.length - 1; i++) {
+            if (pointsNaturalOrder[i].compareTo(pointsNaturalOrder[i + 1]) == 0) {
+                throw new IllegalArgumentException();
             }
         }
     }
 
-    // ensure no duplicates in line segment array
-    private boolean detectLineSegmentDuplicates(Point startingPointToCheck)
-    {
-        for (Point currentPoint : startingPoints)
-        {
-            if (currentPoint.compareTo(startingPointToCheck) == 0) return true;
-        }
-        return false;
-    }
-
     public static void main(String[] args) {
-        // test client code here
-        System.out.println(Double.compare(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY));
+        // test code here
     }
 }

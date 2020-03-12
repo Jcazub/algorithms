@@ -1,4 +1,6 @@
-package Part1.Week2.Sorts;
+package Part1.Week3.MergeSort;
+
+import Part1.Week2.Sorts.Sort;
 
 public class MergeSort extends Sort {
 

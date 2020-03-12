@@ -1,10 +1,5 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-
-import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.StdDraw;
-import edu.princeton.cs.algs4.StdOut;
 
 public class BruteCollinearPoints {
 
@@ -28,21 +23,13 @@ public class BruteCollinearPoints {
                     {
                         double slopeIJ = slopeBetween(points, i, j);
 
-                        if (Double.compare(slopeIJ, slopeBetween(points, i, k)) != 0 &&
-                                Double.compare(slopeIJ, slopeBetween(points, i, m)) != 0)
+                        if (Double.compare(slopeIJ, slopeBetween(points, i, k)) == 0 &&
+                                Double.compare(slopeIJ, slopeBetween(points, i, m)) == 0)
                         {
-                            // determine lowest and highest point
                             Point[] line = {points[i], points[j], points[k], points[m]};
                             Arrays.sort(line);
 
-
-
-                            // add to line segments array
-                            LineSegment lineSegment = new LineSegment(line[0], line[3]);
-                            if (!detectLineSegmentDuplicates(lineSegments, lineSegment))
-                            {
-                                lineSegments.add(lineSegment);
-                            }
+                            lineSegments.add(new LineSegment(line[0], line[3]));
                         }
                     }
                 }
@@ -66,9 +53,11 @@ public class BruteCollinearPoints {
         for (int i = 0; i < points.length; i++)
         {
             if (points[i] == null) throw new IllegalArgumentException();
+        }
 
-            for (int k = i + 1; k < points.length; k++)
-            {
+        for (int i = 0; i < points.length; i++)
+        {
+            for (int k = i + 1; k < points.length; k++) {
                 if (points[i].compareTo(points[k]) == 0) throw new IllegalArgumentException();
             }
         }
@@ -80,43 +69,7 @@ public class BruteCollinearPoints {
         return points[i].slopeTo(points[j]);
     }
 
-    // ensure no duplicates in line segment array
-    private static boolean detectLineSegmentDuplicates(List<LineSegment> lineSegments, LineSegment lineSegment)
-    {
-        for (LineSegment currentLine : lineSegments)
-        {
-            if (lineSegment.toString().equals(currentLine.toString())) return true;
-        }
-        return false;
-    }
-
     public static void main(String[] args) {
-
-        // read the n points from a file
-        In in = new In(args[0]);
-        int n = in.readInt();
-        Point[] points = new Point[n];
-        for (int i = 0; i < n; i++) {
-            int x = in.readInt();
-            int y = in.readInt();
-            points[i] = new Point(x, y);
-        }
-
-        // draw the points
-        StdDraw.enableDoubleBuffering();
-        StdDraw.setXscale(0, 32768);
-        StdDraw.setYscale(0, 32768);
-        for (Point p : points) {
-            p.draw();
-        }
-        StdDraw.show();
-
-        // print and draw the line segments
-        BruteCollinearPoints collinear = new BruteCollinearPoints(points);
-        for (LineSegment segment : collinear.segments()) {
-            StdOut.println(segment);
-            segment.draw();
-        }
-        StdDraw.show();
+        // test code here
     }
 }

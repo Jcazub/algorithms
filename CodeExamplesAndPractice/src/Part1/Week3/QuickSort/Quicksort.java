@@ -1,4 +1,6 @@
-package Part1.Week2.Sorts;
+package Part1.Week3.QuickSort;
+
+import Part1.Week2.Sorts.Sort;
 
 public class Quicksort extends Sort {
 
@@ -16,7 +18,7 @@ public class Quicksort extends Sort {
         sort(a, j+1, hi);
     }
 
-    private static int partition(Comparable[] a, int lo, int hi)
+    static int partition(Comparable[] a, int lo, int hi)
     {
         int i = lo, j = hi + 1;
         while (true)

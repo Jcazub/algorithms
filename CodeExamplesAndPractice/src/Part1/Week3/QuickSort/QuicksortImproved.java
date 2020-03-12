@@ -1,4 +1,7 @@
-package Part1.Week2.Sorts;
+package Part1.Week3.QuickSort;
+
+import Part1.Week2.Sorts.InsertionSort;
+import Part1.Week2.Sorts.Sort;
 
 public class QuicksortImproved extends Sort {
 

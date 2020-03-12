@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf9bd2cc-c74d-4a63-95ac-4d80e7e51112" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/Collinear.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/src/BruteCollinearPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/src/FastCollinearPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/src/LineSegment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignments/Collinear/src/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/Quicksort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/QuicksortImproved.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Part1/Week3/QuickSort/QuickSelect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Part1/Week3/QuickSort/Quicksort3Way.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignments/Collinear/out/production/Collinear/FastCollinearPoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments/Collinear/out/production/Collinear/FastCollinearPoints.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignments/Collinear/out/production/Collinear/Point$SLOPEORDER.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments/Collinear/out/production/Collinear/Point$SLOPEORDER.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignments/Collinear/out/production/Collinear/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments/Collinear/out/production/Collinear/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignments/Collinear/src/FastCollinearPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments/Collinear/src/FastCollinearPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignments/zips/collinear.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignments/zips/collinear.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1/Week2/Sorts/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Week2/Sorts/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1/Week2/Sorts/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Week3/MergeSort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1/Week2/Sorts/MergeSortImproved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Week3/MergeSort/MergeSortImproved.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1/Week2/Sorts/MergeSortImprovedWithArraySwap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Week3/MergeSort/MergeSortImprovedWithArraySwap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1/Week2/Sorts/Quicksort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Week3/QuickSort/Quicksort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1/Week2/Sorts/QuicksortImproved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Week3/QuickSort/QuicksortImproved.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,11 +38,17 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Part1/Week2/Queues" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -64,18 +68,6 @@
       <recent name="$PROJECT_DIR$/src/Part1/Week2/Stacks" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -94,7 +86,9 @@
       <workItem from="1565548833154" duration="97000" />
       <workItem from="1568579920444" duration="579000" />
       <workItem from="1569375613611" duration="1810000" />
-      <workItem from="1581968584922" duration="11050000" />
+      <workItem from="1581968584922" duration="11056000" />
+      <workItem from="1582743641082" duration="4611000" />
+      <workItem from="1583809039007" duration="35000" />
     </task>
     <servers />
   </component>
@@ -106,10 +100,18 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="97" y="72" key="new project wizard" timestamp="1583021716325">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="97" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1583021716325" />
   </component>
 </project>
