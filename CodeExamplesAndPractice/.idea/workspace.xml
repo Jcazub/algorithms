@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf9bd2cc-c74d-4a63-95ac-4d80e7e51112" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week4/PriorityQueue/ElementaryUnorderedMaxPQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Part1/Week4/ElementarySymbolTables/BinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +79,7 @@
       <workItem from="1582743641082" duration="4611000" />
       <workItem from="1583809039007" duration="35000" />
       <workItem from="1585689323555" duration="6948000" />
+      <workItem from="1586279451054" duration="7168000" />
     </task>
     <servers />
   </component>
