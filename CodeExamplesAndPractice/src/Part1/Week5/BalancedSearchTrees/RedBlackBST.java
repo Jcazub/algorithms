@@ -58,6 +58,7 @@ public class RedBlackBST<Key extends  Comparable<Key>, Value> {
         root = delete(key, root);
     }
 
+    // needs to be updated for rb bst
     private Node delete(Key key, Node x) {
         if (x == null) return null;
         int cmp = key.compareTo(key);

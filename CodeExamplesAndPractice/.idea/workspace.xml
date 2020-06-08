@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf9bd2cc-c74d-4a63-95ac-4d80e7e51112" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Part1/Week5/BalancedSearchTrees/RedBlackBST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Part1/Week5/BalancedSearchTrees/RedBlackBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Week5/BalancedSearchTrees/RedBlackBST.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
       <workItem from="1586403897274" duration="3626000" />
       <workItem from="1591225114001" duration="1686000" />
       <workItem from="1591316291655" duration="3054000" />
-      <workItem from="1591488824735" duration="2866000" />
+      <workItem from="1591488824735" duration="4677000" />
     </task>
     <servers />
   </component>
