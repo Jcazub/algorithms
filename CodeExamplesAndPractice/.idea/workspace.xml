@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bf9bd2cc-c74d-4a63-95ac-4d80e7e51112" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1/Week5/BalancedSearchTrees/RedBlackBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Part1/Week5/BalancedSearchTrees/RedBlackBST.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,9 @@
       <workItem from="1586403897274" duration="3626000" />
       <workItem from="1591225114001" duration="1686000" />
       <workItem from="1591316291655" duration="3054000" />
-      <workItem from="1591488824735" duration="4677000" />
+      <workItem from="1591488824735" duration="5268000" />
+      <workItem from="1592365440996" duration="2162000" />
+      <workItem from="1596462400131" duration="2264000" />
     </task>
     <servers />
   </component>
@@ -108,21 +109,17 @@
       <screen x="-1440" y="0" width="1440" height="2520" />
     </state>
     <state x="-990" y="1015" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2560.1400/-1440.0.1440.2520/2560.0.2560.1400@-1440.0.1440.2520" timestamp="1591494948437" />
-    <state x="-872" y="1149" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585694362203">
+    <state x="-941" y="1001" key="FileChooserDialogImpl" timestamp="1596634460228">
       <screen x="-1440" y="0" width="1440" height="2520" />
     </state>
-    <state x="-872" y="1149" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-1440.0.1440.2520/0.0.2560.1400/2560.0.2560.1400@-1440.0.1440.2520" timestamp="1585694362203" />
-    <state x="-940" y="1019" key="FileChooserDialogImpl" timestamp="1586290909684">
+    <state x="-941" y="1001" key="FileChooserDialogImpl/0.0.2560.1400/-1440.0.1440.2520/2560.0.2560.1400@-1440.0.1440.2520" timestamp="1596634460228" />
+    <state x="-1024" y="1084" key="com.intellij.ide.util.TipDialog" timestamp="1596506247995">
       <screen x="-1440" y="0" width="1440" height="2520" />
     </state>
-    <state x="-940" y="1019" key="FileChooserDialogImpl/0.0.2560.1400/-1440.0.1440.2520/2560.0.2560.1400@-1440.0.1440.2520" timestamp="1586290909684" />
-    <state x="-1024" y="1084" key="com.intellij.ide.util.TipDialog" timestamp="1591488833300">
+    <state x="-1024" y="1084" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/-1440.0.1440.2520/2560.0.2560.1400@-1440.0.1440.2520" timestamp="1596506247995" />
+    <state x="-1338" y="880" key="new project wizard" timestamp="1596634550286">
       <screen x="-1440" y="0" width="1440" height="2520" />
     </state>
-    <state x="-1024" y="1084" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/-1440.0.1440.2520/2560.0.2560.1400@-1440.0.1440.2520" timestamp="1591488833300" />
-    <state x="97" y="72" key="new project wizard" timestamp="1583021716325">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="97" y="72" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1583021716325" />
+    <state x="-1338" y="880" key="new project wizard/0.0.2560.1400/-1440.0.1440.2520/2560.0.2560.1400@-1440.0.1440.2520" timestamp="1596634550286" />
   </component>
 </project>
