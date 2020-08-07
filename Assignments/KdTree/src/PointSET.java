@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class PointSET {
 
-    private SET<Point2D> points;
+    private final SET<Point2D> points;
 
     public PointSET() {
         points = new SET<>();
@@ -56,10 +56,10 @@ public class PointSET {
         if (this.isEmpty()) return null;
 
         Point2D nearestNeighbor = null;
-        Double nearestNeighborDistance = Double.POSITIVE_INFINITY;
+        double nearestNeighborDistance = Double.POSITIVE_INFINITY;
 
         for (Point2D point : points) {
-            Double currentDistance = p.distanceTo(point);
+            double currentDistance = p.distanceSquaredTo(point);
 
             if (Double.compare(currentDistance, nearestNeighborDistance) < 0) {
                 nearestNeighbor = point;
